@@ -130,7 +130,7 @@ foreach (CimInstance cimObj in queryInstance)
 </thead>
 <tbody>
 <tr class="odd">
-<td><pre><code>using Microsoft.Management.Infrastructure;
+<td><pre><code>using Microsoft.Management;
 ...
 CimSession session = CimSession.Create(&quot;localHost&quot;);
 IEnumerable&lt;CimInstance&gt; queryInstance = session.QueryInstances(@&quot;root\cimv2&quot;, &quot;WQL&quot;, &quot;SELECT * FROM Win32_ComputerSystem&quot;);
